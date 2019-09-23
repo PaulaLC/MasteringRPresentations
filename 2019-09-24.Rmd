@@ -1,11 +1,14 @@
 ---
-title: "Mastering R presentations"
-author: "Paula LC"
-date: "24 de septiembre de 2019"
-output: html_document
+title: "Mastering R Presentations"
+authors: ["Paula LC"]
+date: 2019-09-24
+categories: ["R"]
+tags: ["R", "RMarkdown", "Presentations"]
 ---
 
-# Introduction
+Do you want to know how to make elegant and simple reproducible presentations? In this talk, we are going to explain how to do presentations in different output formats using one of the easiest and most exhaustive statistical software, R. Now, it is possible create Beamer, PowerPoint, or HTML presentations, including R code, LaTeX equations, graphics, or interactive content.
+
+After the tutorial, you will be able to create R presentations on your own with R Markdown in RStudio. But don’t worry if you don’t know a lot of R Markdown, because it’s really simple to use it with RStudio and you will discover the keys to master the language.
 
 We have several options to create amazing technical presentations in pdf format with tools like PowerPoint or $LaTeX$. But the truth is that when we want to generate a full and complete document with graphs, code, and text, then we invest more time in the appearance than in the content itself, or learning how to add content easily. So here I want to show you a good alternative using R. The best feature R has is the flexibility and simplicity of the code to reproduce amazing presentations with little work. To achieve it, R uses Markdown. But, what is exactly Markdown?
 
@@ -114,7 +117,7 @@ In the last versions you can directly create presentations going to `File -> New
 
 So going to `File -> New File -> R Markdown` and selecting the option `Presentation`, you are going to have different options to create your slides. Selecting any of them, a file like this is automatically generated:
 
-![Markdown document of a Slidy presentation.](static/post/image1.PNG)
+![Markdown document of a Slidy presentation.](/post/image1.PNG)
 
 Depending on the final style of the output there are different output options. In the next points, we are going to explain in detail the main features of all them.
 
@@ -374,7 +377,7 @@ install.packages("revealjs")
 
 Then, you can directly change in the R Markdown document header the *output* argument to `revealjs_presentation` or go to menu `File -> New File -> R Markdown -> From template` and select reveal.js presentation.
 
-![Creating a revealjs presentation](static/post/revealjs.png)
+![Creating a revealjs presentation](/post/revealjs.png)
 
 There are some amazing keyboard shortcuts:
 
@@ -432,7 +435,7 @@ devtools::install_github('yihui/xaringan')
 ```
 Once you get installed, go to the menu `File -> New File -> R Markdown -> From template` and click on ninja presentation. 
 
-![Selecting ninja presentation.](static/post/ninja.png)
+![Selecting ninja presentation.](/post/ninja.png)
 
 Note: If you understand chinese you can select the last option ;).
 
